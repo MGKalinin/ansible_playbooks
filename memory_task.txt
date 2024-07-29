@@ -1,0 +1,19 @@
+Задача: написать при помощи mdadm -сделать RAID 0 при помощи Ansible
+
+все версии пакетов
+pip freeze
+
+сгенерить файл requirements и записать зависимости
+pip freeze > requirements.txt
+
+ключи ssh
+ /home/max/.ssh/
+
+Автоматически перенести значение public key
+ssh-copy-id max@172.17.2.141
+
+ansible-playbook
+https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html#ansible-playbook
+
+
+
