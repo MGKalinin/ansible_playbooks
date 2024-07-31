@@ -19,3 +19,34 @@ core/2.17/reference_appendices/interpreter_discovery.html for more information.
     "changed": false,
     "ping": "pong"
 }
+2024-07-31 17:01:59,922 p=8606 u=max n=ansible | [WARNING]: Platform linux on host my_host_01 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-07-31 17:01:59,922 p=8606 u=max n=ansible | my_host_01 | CHANGED | rc=0 >>
+Ср 31 июл 2024 17:01:59 MSK
+
+2024-07-31 17:03:46,010 p=8721 u=max n=ansible | [WARNING]: Platform linux on host vbox_1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-07-31 17:03:46,010 p=8721 u=max n=ansible | vbox_1 | CHANGED | rc=0 >>
+Ср 31 июл 2024 17:03:45 MSK
+
+2024-07-31 17:15:56,333 p=9123 u=max n=ansible | [WARNING]: Platform linux on host vbox_1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-07-31 17:15:56,333 p=9123 u=max n=ansible | vbox_1 | CHANGED | rc=0 >>
+Jul 31 17:03:45 max-VirtualBox systemd[1]: Started Session 11 of User max.
+Jul 31 17:03:45 max-VirtualBox python3.10[40477]: ansible-ansible.legacy.command Invoked with _raw_params=date _uses_shell=False expand_argument_vars=True stdin_add_newline=True strip_empty_ends=True argv=None chdir=None executable=None creates=None removes=None stdin=None
+Jul 31 17:04:46 max-VirtualBox systemd[1]: session-11.scope: Deactivated successfully.
+Jul 31 17:15:55 max-VirtualBox systemd[1]: Started Session 12 of User max.
+Jul 31 17:15:56 max-VirtualBox python3.10[40548]: ansible-ansible.legacy.command Invoked with _raw_params=cat /var/log/syslog | tail -5 _uses_shell=True expand_argument_vars=True stdin_add_newline=True strip_empty_ends=True argv=None chdir=None executable=None creates=None removes=None stdin=None
+

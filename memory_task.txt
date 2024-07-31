@@ -28,5 +28,13 @@ ansible -i inventory.yaml all -m ping
 запуск сценария
 ansible-playbook -i inventory.yaml playbook.yaml
 
+командные модули ansible
+command:
+ansible test -m command -a "date"
+shell:
+ansible test -m shell -a "cat /var/log/syslog | tail -5"
+и т.д.
 
+запуск сценария без указания inventory файла после создания ansible.cfg
+ansible all -m ping
 
