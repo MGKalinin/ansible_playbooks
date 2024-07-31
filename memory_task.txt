@@ -13,13 +13,19 @@ pip install -r requirements.txt
  /home/max/.ssh/
 
 Автоматически перенести значение public key
-ssh-copy-id max@172.17.2.141
+ssh-copy-id max@172.17.2.146
 
 ansible-playbook
 https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html#ansible-playbook
 
 активация в/окружения
  source .venv/bin/activate
+
+пингануть (all - это запуск на всех серверах, указанных в данном inventory-файле)
+ansible -i inventory.yaml all -m ping
+
+запуск сценария
+ansible-playbook -i inventory.yaml playbook.yaml
 
 
 
