@@ -6,6 +6,9 @@ pip freeze
 сгенерить файл requirements и записать зависимости
 pip freeze > requirements.txt
 
+При установке пакетов на новой машине:
+pip install -r requirements.txt
+
 ключи ssh
  /home/max/.ssh/
 
@@ -14,6 +17,9 @@ ssh-copy-id max@172.17.2.141
 
 ansible-playbook
 https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html#ansible-playbook
+
+активация в/окружения
+ source .venv/bin/activate
 
 
 
