@@ -1,0 +1,21 @@
+2024-07-31 16:55:17,480 p=8377 u=max n=ansible | [WARNING]: Unable to parse /home/max/PycharmProjects/ansible_playbooks/ansible_
+quickstart/ansible_quickstart/inventory.yaml as an inventory source
+
+2024-07-31 16:55:17,480 p=8377 u=max n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-07-31 16:55:17,483 p=8377 u=max n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2024-07-31 16:57:57,721 p=8421 u=max n=ansible | [WARNING]: Platform linux on host my_host_01 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-07-31 16:57:57,722 p=8421 u=max n=ansible | my_host_01 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.10"
+    },
+    "changed": false,
+    "ping": "pong"
+}

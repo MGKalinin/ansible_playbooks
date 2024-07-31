@@ -21,7 +21,8 @@ https://docs.ansible.com/ansible/latest/cli/ansible-playbook.html#ansible-playbo
 активация в/окружения
  source .venv/bin/activate
 
-пингануть (all - это запуск на всех серверах, указанных в данном inventory-файле)
+пингануть (all - это запуск на всех серверах, указанных в данном inventory-файле,
+ -m модули ansible)
 ansible -i inventory.yaml all -m ping
 
 запуск сценария
