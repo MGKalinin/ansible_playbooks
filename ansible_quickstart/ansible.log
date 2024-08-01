@@ -50,3 +50,32 @@ Jul 31 17:04:46 max-VirtualBox systemd[1]: session-11.scope: Deactivated success
 Jul 31 17:15:55 max-VirtualBox systemd[1]: Started Session 12 of User max.
 Jul 31 17:15:56 max-VirtualBox python3.10[40548]: ansible-ansible.legacy.command Invoked with _raw_params=cat /var/log/syslog | tail -5 _uses_shell=True expand_argument_vars=True stdin_add_newline=True strip_empty_ends=True argv=None chdir=None executable=None creates=None removes=None stdin=None
 
+2024-08-01 12:57:15,900 p=30348 u=max n=ansible | PLAY [Test PING] ***************************************************************
+2024-08-01 12:57:15,913 p=30348 u=max n=ansible | TASK [Gathering Facts] *********************************************************
+2024-08-01 12:57:17,462 p=30348 u=max n=ansible | [WARNING]: Platform linux on host vbox_1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-08-01 12:57:17,462 p=30348 u=max n=ansible | ok: [vbox_1]
+2024-08-01 12:57:17,478 p=30348 u=max n=ansible | TASK [ping-ping] ***************************************************************
+2024-08-01 12:57:17,816 p=30348 u=max n=ansible | ok: [vbox_1]
+2024-08-01 12:57:17,847 p=30348 u=max n=ansible | PLAY RECAP *********************************************************************
+2024-08-01 12:57:17,848 p=30348 u=max n=ansible | vbox_1                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-01 13:00:57,086 p=31344 u=max n=ansible | PLAY [Test PING] ***************************************************************
+2024-08-01 13:00:57,093 p=31344 u=max n=ansible | TASK [Gathering Facts] *********************************************************
+2024-08-01 13:00:58,491 p=31344 u=max n=ansible | [WARNING]: Platform linux on host vbox_1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-08-01 13:00:58,491 p=31344 u=max n=ansible | ok: [vbox_1]
+2024-08-01 13:00:58,506 p=31344 u=max n=ansible | TASK [ping-ping] ***************************************************************
+2024-08-01 13:00:58,820 p=31344 u=max n=ansible | ok: [vbox_1]
+2024-08-01 13:00:58,840 p=31344 u=max n=ansible | PLAY RECAP *********************************************************************
+2024-08-01 13:00:58,840 p=31344 u=max n=ansible | vbox_1                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-01 13:07:48,313 p=33158 u=max n=ansible | - Role test was created successfully
+2024-08-01 13:25:07,029 p=38366 u=max n=ansible | - Role LEMP was created successfully
+2024-08-01 14:09:47,366 p=49831 u=max n=ansible | - Role probe_role was created successfully
