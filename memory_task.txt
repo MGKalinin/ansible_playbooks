@@ -46,3 +46,4 @@ Ansible Roles - это роли, позволяющие автоматическ
 для создания структуры директорий используется команда (ansible-galaxy init <Название>):
 ansible-galaxy init test
 
+become - запуск sudo
