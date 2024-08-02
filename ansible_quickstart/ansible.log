@@ -79,3 +79,16 @@ core/2.17/reference_appendices/interpreter_discovery.html for more information.
 2024-08-01 13:07:48,313 p=33158 u=max n=ansible | - Role test was created successfully
 2024-08-01 13:25:07,029 p=38366 u=max n=ansible | - Role LEMP was created successfully
 2024-08-01 14:09:47,366 p=49831 u=max n=ansible | - Role probe_role was created successfully
+2024-08-02 12:06:41,063 p=71741 u=max n=ansible | PLAY [Test PING] ***************************************************************
+2024-08-02 12:06:41,073 p=71741 u=max n=ansible | TASK [Gathering Facts] *********************************************************
+2024-08-02 12:06:42,713 p=71741 u=max n=ansible | [WARNING]: Platform linux on host vbox_1 is using the discovered Python
+interpreter at /usr/bin/python3.10, but future installation of another Python
+interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-08-02 12:06:42,713 p=71741 u=max n=ansible | ok: [vbox_1]
+2024-08-02 12:06:42,728 p=71741 u=max n=ansible | TASK [ping-ping] ***************************************************************
+2024-08-02 12:06:43,055 p=71741 u=max n=ansible | ok: [vbox_1]
+2024-08-02 12:06:43,078 p=71741 u=max n=ansible | PLAY RECAP *********************************************************************
+2024-08-02 12:06:43,078 p=71741 u=max n=ansible | vbox_1                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

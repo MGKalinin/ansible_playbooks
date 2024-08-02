@@ -38,12 +38,11 @@ ansible test -m shell -a "cat /var/log/syslog | tail -5"
 запуск сценария без указания inventory файла после создания ansible.cfg
 ansible all -m ping
 
-####### закончил на Ansible-playbooks   https://habr.com/ru/companies/nixys/articles/668458/
-
-
 Ansible Roles - это роли, позволяющие автоматически загружать связанные переменные, файлы, задачи,
  обработчики и другие артефакты Ansible на основе известной файловой структуры.
 для создания структуры директорий используется команда (ansible-galaxy init <Название>):
 ansible-galaxy init test
 
 become - запуск sudo
+
+
